@@ -16,14 +16,9 @@ nav{
     padding:2% 6%;
     justify-content: space-between;
     align-items: center;
+    margin:0 auto ;
 }
-nav img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 5px solid rgb(13, 1, 1);
-    box-shadow: rgba(230, 223, 223, 0.3) 0px 19px 38px, rgba(237, 232, 232, 0.22) 0px 15px 12px;
-}
+
 nav img{
     width: 80px;
     height: 80px;
@@ -32,8 +27,11 @@ nav img{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(101, 73, 73, 0.22) 0px 15px 12px;
 }
 .nav-link{
-    flex:9;
-    text-align: right;
+    flex:1;
+    text-align:right;
+    display: grid;
+    row-gap: 50px;
+
 }
 
 .nav-link ul li{
