@@ -1,0 +1,9 @@
+.mainbody {
+    margin-top: -80vh;
+    z-index: 1;
+}
+
+.card-body{
+    text-decoration:solid;
+    font-style: italic;
+}

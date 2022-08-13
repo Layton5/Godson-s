@@ -2,16 +2,19 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
 	
 }
 .header{
-    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./images/background.png);
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./images/bodyyy.jpg);
     min-height: 100vh;
     width: 100%;
     background-position: center;
     background-size: cover;
-    position: relative;
-	overflow: auto; padding-bottom: 150px;
+    position: absolute;
+	overflow: scroll; 
+	padding-bottom: 150px;
+	scroll-behavior: smooth;
 }
 nav{
 	top: 0;
@@ -69,7 +72,7 @@ nav img{
 		width: 90%;
 		color: whitesmoke;
 		position: absolute;
-		top: 50%;
+		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
@@ -109,7 +112,7 @@ nav img{
 			}
 
 			.footer {
-				position:absolute;
+				position:fixed;
 				bottom:0;
 				left:0;
 				width:100%;
@@ -148,6 +151,58 @@ nav img{
 				font-style: comic-sans;
 			  
 			  }
+.services{
+	width: 50%;
+	color:wheat;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.row{
+	display:flex;
+	margin-top: auto;
+	justify-content: space-between;
+}
+
+.service-column{
+	flex-basis:31%;
+	background: black;
+	border-radius: 5px;
+	margin-bottom:5% ;
+	padding:inherit;
+	box-sizing: border-box;
+	text-align: center;
+	grid-row: 3;
+	
+
+}
+
+.service-column:hover{
+	color:white;
+	transition: 1s;
+}
+.service-column h3{
+	font-style: italic;
+	font-size: 20px;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			  @media only screen and (max-width:768px) {
 				.footer {
 					height: 15%;
@@ -178,6 +233,24 @@ nav img{
 					margin-top:5px;
 					border-radius:  50px;;
 				  }
+
+				  .row{
+					display:grid;
+					margin-top: auto;
+					justify-content: space-between;
+					justify-items: center;
+				}
+				  
+.service-column{
+	flex-basis:2%;
+	background: black;
+	border-radius: 1px;
+	margin-bottom:2% ;
+	padding:inherit;
+	box-sizing: border-box;
+	text-align: center;
+	columns: 3;
+	
 		
 		}
-		
+	}
